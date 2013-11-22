@@ -5,18 +5,19 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
     private Calculadora cal = null;
-    private EditText display = null;
+    private TextView display = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (cal == null) cal = new Calculadora();
-        display = (EditText) findViewById(R.id.txtDisplay);
+        display = (TextView) findViewById(R.id.txtDisplay);
     }
 
 

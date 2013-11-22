@@ -11,18 +11,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <EditText
+    <TextView
         android:id="@+id/txtDisplay"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number|numberDecimal"
-        android:textAlignment="textEnd" >
-
-        <requestFocus />
-    </EditText>
-
-
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
         android:layout_width="match_parent"
